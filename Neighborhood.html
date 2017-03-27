@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 100%; }
-    </style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div id="map" data-bind="googleMap:googleMapData"></div>
+	<input id="searchbox" class="controls" type="text" placeholder="Search Box">
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPkCNRkiC7RH34wLVeUIaQv3YM-KwQUSg">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPkCNRkiC7RH34wLVeUIaQv3YM-KwQUSg&libraries=places">
     </script>
 	<script src="js/lib/knockout-3.4.2.js"></script>
 	<script src="js/app.js"></script>
